@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_project_admin,project.admin,model_enterprise_project,enterprise_project.group_project_admin,1,1,1,1
+access_task_admin,task.admin,model_enterprise_task,enterprise_project.group_project_admin,1,1,1,1
+
+access_project_manager,project.manager,model_enterprise_project,enterprise_project.group_project_manager,1,1,1,0
+access_task_manager,task.manager,model_enterprise_task,enterprise_project.group_project_manager,1,1,1,0
+
+access_project_employee,project.employee,model_enterprise_project,enterprise_project.group_project_employee,1,0,0,0
+access_task_employee,task.employee,model_enterprise_task,enterprise_project.group_project_employee,1,1,0,0

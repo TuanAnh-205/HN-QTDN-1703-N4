@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Danh sách dự án -->
+    <record id="view_enterprise_project_tree" model="ir.ui.view">
+        <field name="name">enterprise.project.tree</field>
+        <field name="model">enterprise.project</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="code"/>
+                <field name="name"/>
+                <field name="manager_id"/>
+                <field name="task_count"/>
+                <field name="completed_task"/>
+                <field name="progress" widget="progressbar"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form dự án -->
+    <record id="view_enterprise_project_form" model="ir.ui.view">
+        <field name="name">enterprise.project.form</field>
+        <field name="model">enterprise.project</field>
+        <field name="arch" type="xml">
+            <form>
+
+                <header>
+
+                    <button
+                        name="action_confirm"
+                        type="object"
+                        string="Xác nhận dự án"
+                        class="btn-primary"
+                        states="new"/>
+
+                    <field name="state" widget="statusbar"
+                           statusbar_visible="new,doing,done"/>
+
+                </header>
+
+                <sheet>
+
+                    <group>
+
+                        <field name="code" readonly="1"/>
+                        <field name="name"/>
+
+                        <field name="manager_id"/>
+
+                        <field name="member_ids"
+                               widget="many2many_tags"/>
+
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+
+                    </group>
+
+                    <group>
+
+                        <field name="task_count" readonly="1"/>
+                        <field name="completed_task" readonly="1"/>
+
+                        <field
+                            name="progress"
+                            widget="progressbar"
+                            readonly="1"/>
+
+                    </group>
+
+                    <notebook>
+
+                        <page string="Danh sách công việc">
+
+                            <field name="task_ids">
+
+                                <tree>
+
+                                    <field name="code"/>
+                                    <field name="name"/>
+                                    <field name="employee_id"/>
+                                    <field name="deadline"/>
+                                    <field name="progress"/>
+                                    <field name="state"/>
+
+                                </tree>
+
+                            </field>
+
+                        </page>
+
+                    </notebook>
+
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_enterprise_project" model="ir.actions.act_window">
+        <field name="name">Quản lý dự án</field>
+        <field name="res_model">enterprise.project</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu -->
+    <menuitem
+        id="menu_enterprise_root"
+        name="Quản lý dự án"
+        sequence="10"/>
+
+    <menuitem
+        id="menu_enterprise_project"
+        name="Danh sách dự án"
+        parent="menu_enterprise_root"
+        action="action_enterprise_project"
+        sequence="10"/>
+
+</odoo>

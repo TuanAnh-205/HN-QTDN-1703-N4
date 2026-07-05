@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Nhóm Quản trị -->
+    <record id="group_project_admin" model="res.groups">
+        <field name="name">Project Administrator</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+
+    <!-- Nhóm Quản lý -->
+    <record id="group_project_manager" model="res.groups">
+        <field name="name">Project Manager</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+
+    <!-- Nhóm Nhân viên -->
+    <record id="group_project_employee" model="res.groups">
+        <field name="name">Project Employee</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+
+</odoo>

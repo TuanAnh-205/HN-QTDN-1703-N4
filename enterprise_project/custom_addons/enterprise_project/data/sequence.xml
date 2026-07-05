@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Sequence Dự án -->
+    <record id="seq_enterprise_project" model="ir.sequence">
+        <field name="name">Project Sequence</field>
+        <field name="code">enterprise.project</field>
+        <field name="prefix">DA</field>
+        <field name="padding">4</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
+    <!-- Sequence Công việc -->
+    <record id="seq_enterprise_task" model="ir.sequence">
+        <field name="name">Task Sequence</field>
+        <field name="code">enterprise.task</field>
+        <field name="prefix">CV</field>
+        <field name="padding">4</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
+</odoo>
