@@ -38,16 +38,55 @@ Dự án Enterprise Project Management được xây dựng trên nền tảng O
 
 ## 🚀 3. Các chức năng chính
 
-Module Enterprise Project Management được xây dựng nhằm hỗ trợ doanh nghiệp quản lý dự án và công việc trên nền tảng Odoo 15. Các chức năng chính của module bao gồm:
+Hệ thống Enterprise Project Management được xây dựng trên nền tảng Odoo 15 nhằm hỗ trợ doanh nghiệp quản lý dự án, quản lý công việc và phân công nhân sự. Các chức năng được chia thành các nhóm nghiệp vụ chính như sau:
 
-Quản lý dự án: Cho phép tạo mới, chỉnh sửa, cập nhật và quản lý thông tin dự án như mã dự án, tên dự án, trưởng dự án, thành viên tham gia, thời gian bắt đầu, thời gian kết thúc và trạng thái dự án.
-Quản lý công việc: Hỗ trợ tạo, chỉnh sửa và theo dõi các công việc thuộc từng dự án, bao gồm thông tin về mã công việc, tên công việc, người phụ trách, mức độ ưu tiên, thời hạn hoàn thành và tiến độ thực hiện.
-Phân công nhân viên: Tích hợp với module Quản lý Nhân sự (HRM) của Odoo, cho phép lựa chọn và phân công nhân viên phụ trách từng công việc trong dự án.
-Tự động sinh công việc: Khi dự án được xác nhận, hệ thống tự động tạo các công việc mặc định và phân công cho các thành viên tham gia dự án, giúp giảm thời gian thao tác và chuẩn hóa quy trình quản lý.
-Theo dõi tiến độ: Cho phép cập nhật tiến độ thực hiện của từng công việc theo tỷ lệ phần trăm, đồng thời hiển thị tiến độ tổng thể của dự án thông qua thanh tiến trình.
-Tự động cập nhật trạng thái: Hệ thống tự động thay đổi trạng thái của công việc và dự án dựa trên tiến độ thực hiện, giúp người quản lý dễ dàng theo dõi tình hình triển khai.
-Quản lý quyền truy cập: Phân quyền người dùng theo các nhóm như Project Administrator, Project Manager và Project Employee, đảm bảo mỗi người dùng chỉ được phép thực hiện các chức năng phù hợp với vai trò của mình.
-Giao diện trực quan: Xây dựng giao diện quản lý bằng XML trên nền tảng Odoo với các danh sách, biểu mẫu và menu chức năng rõ ràng, giúp người dùng thao tác thuận tiện và dễ sử dụng.
+3.1. Quản lý Dự án
+Tạo mới, chỉnh sửa, cập nhật và xóa dự án.
+Tự động sinh mã dự án theo Sequence.
+Quản lý thông tin dự án gồm: tên dự án, trưởng dự án, thành viên, ngày bắt đầu và ngày kết thúc.
+Theo dõi trạng thái dự án (Mới, Đang thực hiện, Hoàn thành).
+Thống kê tổng số công việc, số công việc hoàn thành và tiến độ dự án.
+
+
+3.2. Quản lý Công việc
+Tạo và quản lý danh sách công việc của từng dự án.
+Tự động sinh mã công việc.
+Quản lý thông tin công việc gồm: tên công việc, người phụ trách, ngày bắt đầu, hạn hoàn thành và mức độ ưu tiên.
+Cập nhật tiến độ thực hiện theo phần trăm (%).
+Theo dõi trạng thái công việc (Mới, Đang thực hiện, Hoàn thành).
+
+
+3.3. Phân công Nhân viên
+Tích hợp với module Quản lý Nhân sự (HRM) của Odoo.
+Lựa chọn trưởng dự án từ danh sách nhân viên.
+Phân công nhân viên phụ trách từng công việc.
+Quản lý danh sách thành viên tham gia dự án.
+Liên kết dữ liệu nhân viên giữa module Dự án và HRM.
+
+
+3.4. Tự động hóa Quy trình
+Tự động sinh các công việc mặc định khi xác nhận dự án.
+Tự động phân công công việc cho thành viên dự án.
+Tự động cập nhật trạng thái công việc theo tiến độ thực hiện.
+Tự động cập nhật tiến độ và trạng thái của dự án dựa trên kết quả thực hiện các công việc.
+Tự động sinh mã dự án và mã công việc theo quy tắc đã cấu hình.
+
+
+3.5. Quản lý Quyền truy cập
+Phân quyền người dùng theo nhóm:
+Project Administrator.
+Project Manager.
+Project Employee.
+Kiểm soát quyền xem, thêm, sửa và xóa dữ liệu.
+Đảm bảo an toàn dữ liệu và phù hợp với vai trò của từng người dùng.
+
+
+3.6. Giao diện và Báo cáo
+Giao diện quản lý trực quan trên nền tảng Odoo.
+Danh sách và biểu mẫu quản lý dự án, công việc.
+Hiển thị thanh tiến độ (Progress Bar) của dự án và công việc.
+Theo dõi thông tin dự án và công việc theo thời gian thực.
+Hỗ trợ tìm kiếm và lọc dữ liệu ngay trên giao diện quản lý.
 ## ⚙️ 4. Cài đặt
 
 ### 4.1. Cài đặt công cụ, môi trường và các thư viện cần thiết
