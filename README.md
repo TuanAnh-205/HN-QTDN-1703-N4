@@ -36,57 +36,122 @@ Dự án Enterprise Project Management được xây dựng trên nền tảng O
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 </div>
 
-## 🚀 3. Các chức năng chính
+## 🚀 3# 🚀 Enterprise Project Management (Odoo 15)
 
-Hệ thống Enterprise Project Management được xây dựng trên nền tảng Odoo 15 nhằm hỗ trợ doanh nghiệp quản lý dự án, quản lý công việc và phân công nhân sự. Các chức năng được chia thành các nhóm nghiệp vụ chính như sau:
+## 📌 Giới thiệu
 
-3.1. Quản lý Dự án
-Tạo mới, chỉnh sửa, cập nhật và xóa dự án.
-Tự động sinh mã dự án theo Sequence.
-Quản lý thông tin dự án gồm: tên dự án, trưởng dự án, thành viên, ngày bắt đầu và ngày kết thúc.
-Theo dõi trạng thái dự án (Mới, Đang thực hiện, Hoàn thành).
-Thống kê tổng số công việc, số công việc hoàn thành và tiến độ dự án.
+**Enterprise Project Management** là module được phát triển trên nền tảng **Odoo 15**, hỗ trợ doanh nghiệp quản lý dự án, quản lý công việc và phân công nhân sự một cách hiệu quả. Module giúp theo dõi tiến độ thực hiện dự án, tự động hóa một số quy trình quản lý và tích hợp trực tiếp với module **Human Resources (HR)** của Odoo.
 
+---
 
-3.2. Quản lý Công việc
-Tạo và quản lý danh sách công việc của từng dự án.
-Tự động sinh mã công việc.
-Quản lý thông tin công việc gồm: tên công việc, người phụ trách, ngày bắt đầu, hạn hoàn thành và mức độ ưu tiên.
-Cập nhật tiến độ thực hiện theo phần trăm (%).
-Theo dõi trạng thái công việc (Mới, Đang thực hiện, Hoàn thành).
+# ✨ Các chức năng chính
 
+## 📁 1. Quản lý Dự án
 
-3.3. Phân công Nhân viên
-Tích hợp với module Quản lý Nhân sự (HRM) của Odoo.
-Lựa chọn trưởng dự án từ danh sách nhân viên.
-Phân công nhân viên phụ trách từng công việc.
-Quản lý danh sách thành viên tham gia dự án.
-Liên kết dữ liệu nhân viên giữa module Dự án và HRM.
+- Tạo, chỉnh sửa và xóa dự án.
+- Tự động sinh mã dự án.
+- Quản lý trưởng dự án và thành viên tham gia.
+- Theo dõi thời gian bắt đầu và kết thúc.
+- Theo dõi trạng thái dự án.
+- Thống kê số lượng công việc.
+- Hiển thị tiến độ dự án bằng Progress Bar.
 
+---
 
-3.4. Tự động hóa Quy trình
-Tự động sinh các công việc mặc định khi xác nhận dự án.
-Tự động phân công công việc cho thành viên dự án.
-Tự động cập nhật trạng thái công việc theo tiến độ thực hiện.
-Tự động cập nhật tiến độ và trạng thái của dự án dựa trên kết quả thực hiện các công việc.
-Tự động sinh mã dự án và mã công việc theo quy tắc đã cấu hình.
+## ✅ 2. Quản lý Công việc
 
+- Tạo và quản lý công việc.
+- Tự động sinh mã công việc.
+- Phân công nhân viên phụ trách.
+- Thiết lập ngày bắt đầu và hạn hoàn thành.
+- Cập nhật tiến độ thực hiện.
+- Quản lý mức độ ưu tiên.
+- Theo dõi trạng thái công việc.
 
-3.5. Quản lý Quyền truy cập
-Phân quyền người dùng theo nhóm:
-Project Administrator.
-Project Manager.
-Project Employee.
-Kiểm soát quyền xem, thêm, sửa và xóa dữ liệu.
-Đảm bảo an toàn dữ liệu và phù hợp với vai trò của từng người dùng.
+---
 
+## 👨‍💼 3. Quản lý Nhân sự
 
-3.6. Giao diện và Báo cáo
-Giao diện quản lý trực quan trên nền tảng Odoo.
-Danh sách và biểu mẫu quản lý dự án, công việc.
-Hiển thị thanh tiến độ (Progress Bar) của dự án và công việc.
-Theo dõi thông tin dự án và công việc theo thời gian thực.
-Hỗ trợ tìm kiếm và lọc dữ liệu ngay trên giao diện quản lý.
+- Tích hợp với module HR của Odoo.
+- Lựa chọn trưởng dự án.
+- Quản lý thành viên dự án.
+- Phân công công việc cho nhân viên.
+- Liên kết dữ liệu giữa Dự án và Nhân sự.
+
+---
+
+## ⚙️ 4. Tự động hóa
+
+- Tự động sinh công việc khi xác nhận dự án.
+- Tự động cập nhật trạng thái công việc.
+- Tự động cập nhật tiến độ dự án.
+- Tự động chuyển trạng thái dự án khi hoàn thành.
+
+---
+
+## 🔐 5. Phân quyền
+
+- Project Administrator
+- Project Manager
+- Project Employee
+
+Hệ thống phân quyền theo từng nhóm người dùng nhằm đảm bảo tính bảo mật và kiểm soát dữ liệu.
+
+---
+
+## 🖥️ Giao diện
+
+- Danh sách dự án
+- Form quản lý dự án
+- Danh sách công việc
+- Form quản lý công việc
+- Progress Bar theo dõi tiến độ
+- Menu quản lý trực quan
+
+---
+
+# 📂 Cấu trúc Module
+
+```text
+enterprise_project
+├── __init__.py
+├── __manifest__.py
+├── models
+│   ├── __init__.py
+│   ├── project.py
+│   └── task.py
+├── views
+│   ├── project_views.xml
+│   └── task_views.xml
+├── security
+│   ├── security.xml
+│   └── ir.model.access.csv
+└── data
+    └── sequence.xml
+```
+
+---
+
+# 🛠️ Công nghệ sử dụng
+
+- Odoo 15 Community
+- Python 3
+- XML
+- PostgreSQL
+- Ubuntu Linux
+- Visual Studio Code
+
+---
+
+# 👨‍🎓 Thông tin
+
+**Đề tài:** Enterprise Project Management
+
+**Nền tảng:** Odoo 15 ERP
+
+**Ngôn ngữ:** Python + XML
+
+**Cơ sở dữ liệu:** PostgreSQL
 ## ⚙️ 4. Cài đặt
 
 ### 4.1. Cài đặt công cụ, môi trường và các thư viện cần thiết
