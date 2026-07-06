@@ -20,7 +20,7 @@
 </div>
 
 ## 📖 1. Giới thiệu
-Platform ERP được áp dụng vào học phần Thực tập doanh nghiệp dựa trên mã nguồn mở Odoo. 
+Dự án Enterprise Project Management được xây dựng trên nền tảng Odoo 15 nhằm hỗ trợ doanh nghiệp quản lý dự án và công việc một cách hiệu quả. Module cho phép người dùng tạo và quản lý dự án, phân công công việc cho nhân viên, theo dõi tiến độ thực hiện, tự động cập nhật trạng thái công việc và dự án, đồng thời tích hợp với module Quản lý Nhân sự (HRM) của Odoo để quản lý thông tin nhân viên. Với giao diện trực quan, dễ sử dụng và khả năng tự động hóa một số nghiệp vụ, module góp phần nâng cao hiệu quả quản lý, giảm thời gian xử lý công việc và đáp ứng nhu cầu quản lý dự án trong doanh nghiệp.
 
 ## 🔧 2. Các công nghệ được sử dụng
 <div align="center">
@@ -36,12 +36,18 @@ Platform ERP được áp dụng vào học phần Thực tập doanh nghiệp d
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 </div>
 
-## 🚀 3. Các project đã thực hiện dựa trên Platform
+## 🚀 3. Các chức năng chính
 
-Một số project sinh viên đã thực hiện:
-- #### [Khoá 15](./docs/projects/K15/README.md)
-- #### [Khoá 16](./docs/projects/K16/README.md)
-- #### [Khoá 17](./docs/projects/K17/README.md)
+Module Enterprise Project Management được xây dựng nhằm hỗ trợ doanh nghiệp quản lý dự án và công việc trên nền tảng Odoo 15. Các chức năng chính của module bao gồm:
+
+Quản lý dự án: Cho phép tạo mới, chỉnh sửa, cập nhật và quản lý thông tin dự án như mã dự án, tên dự án, trưởng dự án, thành viên tham gia, thời gian bắt đầu, thời gian kết thúc và trạng thái dự án.
+Quản lý công việc: Hỗ trợ tạo, chỉnh sửa và theo dõi các công việc thuộc từng dự án, bao gồm thông tin về mã công việc, tên công việc, người phụ trách, mức độ ưu tiên, thời hạn hoàn thành và tiến độ thực hiện.
+Phân công nhân viên: Tích hợp với module Quản lý Nhân sự (HRM) của Odoo, cho phép lựa chọn và phân công nhân viên phụ trách từng công việc trong dự án.
+Tự động sinh công việc: Khi dự án được xác nhận, hệ thống tự động tạo các công việc mặc định và phân công cho các thành viên tham gia dự án, giúp giảm thời gian thao tác và chuẩn hóa quy trình quản lý.
+Theo dõi tiến độ: Cho phép cập nhật tiến độ thực hiện của từng công việc theo tỷ lệ phần trăm, đồng thời hiển thị tiến độ tổng thể của dự án thông qua thanh tiến trình.
+Tự động cập nhật trạng thái: Hệ thống tự động thay đổi trạng thái của công việc và dự án dựa trên tiến độ thực hiện, giúp người quản lý dễ dàng theo dõi tình hình triển khai.
+Quản lý quyền truy cập: Phân quyền người dùng theo các nhóm như Project Administrator, Project Manager và Project Employee, đảm bảo mỗi người dùng chỉ được phép thực hiện các chức năng phù hợp với vai trò của mình.
+Giao diện trực quan: Xây dựng giao diện quản lý bằng XML trên nền tảng Odoo với các danh sách, biểu mẫu và menu chức năng rõ ràng, giúp người dùng thao tác thuận tiện và dễ sử dụng.
 ## ⚙️ 4. Cài đặt
 
 ### 4.1. Cài đặt công cụ, môi trường và các thư viện cần thiết
